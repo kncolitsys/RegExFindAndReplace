@@ -1,0 +1,71 @@
+<application> 
+
+	<!-- 
+		ColdFusion Builder extension overview. This is the 
+		information that will be presented to the user during
+		the extension installation process.
+	-->
+	<name>RegEx Replace</name> 
+	<version>0.1</version> 
+	<description>
+		<![CDATA[
+			<p>
+				This extension allows you to run regular expression
+				replaces on a given file. This uses the full, Java-
+				based regular expression engine. Changes can be 
+				previewed before they are committed.
+			</p>
+		]]>
+	</description> 
+	<license>
+		<![CDATA[
+			<p>
+				Just don't sue me.
+			</p>
+		]]>
+	</license> 
+	
+	
+	<!-- 
+		The MenuContributions determine where the extension 
+		is active within ColdFusion Builder (as defined by the 
+		Contribution tags).
+	-->
+	<menucontributions> 
+	
+		<!-- The "ProjectView" is the project navigator. -->
+		<contribution target="projectview"> 
+		
+			<menu name="RegEx Replace"> 
+			
+				<!-- 
+					These are the options that will show up under 
+					the "RegEx Replace" header within the context 
+					menu. Each calls a Handler (by ID), defined 
+					later in this configuration file. 
+				-->
+				<action 
+					name="Find And Replace"
+					handlerid="rereplace"
+					showresponse="true"
+					/>
+						
+			</menu> 
+			
+		</contribution> 
+		
+	</menucontributions>
+
+	<!-- 
+		The Handler define the ColdFusion files that will 
+		receive the data posted by ColdFusion Builder when the 
+		user selects one of the above actions.
+		
+		NOTE: These files are located in the "handlers" folder
+		of the extension installation.
+	-->
+	<handlers> 
+		<handler id="rereplace" type="cfm" filename="rereplace.cfm" />
+	</handlers>
+
+</application>

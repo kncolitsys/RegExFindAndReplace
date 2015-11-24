@@ -1,0 +1,187 @@
+
+.clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clear { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .clear { height:1%; }
+.clear { display:block; }
+
+
+html,
+body {
+	height: 100% ;
+	}
+
+body {
+	background-color: #F8F8F8 ;
+	color: #333333 ;
+	font-size: 12px ;
+	font-family: verdana, arial ;
+	margin: 0px 0px 0px 0px ;
+	padding: 0px 0px 0px 0px ;
+	}
+
+form {
+	margin: 0px 0px 0px 0px ;
+	padding: 20px 10px 20px 20px ;
+	}
+	
+input {
+	vertical-align: middle ;
+	}
+	
+input:focus,
+input:active,
+a:active,
+a:focus {
+	outline: none ;
+	outline-width: 0px 0px 0px 0px ;
+	}
+	
+textarea {
+	background-color: #FFFFFF ;
+	border: 1px solid #333333 ;
+	border-bottom-color: #AAAAAA ;
+	border-right-color: #AAAAAA ;
+	font-family: monospace, courier ;
+	font-size: 16px ;
+	padding: 7px 10px 7px 10px ;
+	}
+	
+#pattern-container {
+	margin-bottom: 15px ;
+	}
+	
+#pattern-label {	
+	display: block ;
+	font-size: 13px ;
+	font-weight: bold ;
+	margin-bottom: 3px ;
+	}
+	
+#pattern-label em {	
+	font-weight: 400 ;
+	}
+
+#pattern-input {
+	height: 100px ;
+	margin: 0px 0px 5px 0px ;
+	width: 96% ;
+	}
+	
+#pattern-options {
+	font-size: 11px ;
+	list-style-type: none ;
+	margin: 0px 0px 0px 0px ;
+	padding: 0px 0px 0px 0px ;
+	}
+	
+#pattern-options li {
+	float: left ;
+	line-height: 15px ;
+	margin: 0px 15px 0px 0px ;
+	padding: 0px 0px 0px 0px ;
+	white-space: nowrap ;
+	zoom: 1 ;
+	}
+	
+#pattern-options label {
+	background-color: #F0F0F0 ;
+	border: 1px solid #D8D8D8 ;
+	cursor: pointer ;
+	display: block ;
+	padding: 2px 10px 2px 5px ;
+	zoom: 1 ;
+	}
+	
+#pattern-options label.active {
+	background-color: #FFFFBB ;
+	border-color: #FFCC00 ;
+	}
+
+#replace-with-container {
+	margin-bottom: 15px ;
+	}
+	
+#replace-with-label {	
+	display: block ;
+	font-size: 13px ;
+	font-weight: bold ;
+	margin-bottom: 3px ;
+	}
+
+#replace-with-input {
+	height: 75px ;
+	margin: 0px 0px 5px 0px ;
+	width: 96% ;
+	}
+	
+#replace-with-caption {
+	font-size: 10px ;
+	}
+	
+#content-container {
+	margin-bottom: 15px ;
+	}
+
+#content-tabs {}
+
+#content-tabs a {
+	background-color: #F5F5F5 ;
+	border: 1px solid #EAEAEA ;
+	border-bottom-width: 0px ;
+	color: #BBBBBB ;
+	cursor: pointer ;
+	float: left ;
+	font-size: 11px ;
+	margin: 0px 5px 0px 0px ;
+	padding: 5px 10px 5px 10px ;
+	text-decoration: none ;
+	text-transform: uppercase ;
+	}
+	
+#content-tabs a.active {
+	background-color: #FFFFBB ;
+	border-color: #FFCC00 ;
+	color: #333333 ;
+	font-weight: bold ;
+	}
+	
+#content-value {
+	background-color: #FFFFFF ;
+	border: 1px solid #333333 ;
+	height: 200px ;
+	overflow: scroll ;
+	padding: 0px 10px 0px 10px ;
+	width: 96% ;
+	}
+
+#content-value pre {
+	margin: 0px 0px 0px 0px ;
+	padding: 10px 0px 10px 0px ;
+	width: 99% ;
+	}
+	
+#content-value pre span {
+	background-color: #FFFF66 ;
+	color: #000000 ;
+	font-weight: bold ;
+	}
+	
+#content-value pre em {
+	background-color: #FFCCFF ;
+	color: #000000 ;
+	font-style: normal ;
+	font-weight: bold ;
+	}
+	
+#form-actions {
+	text-align: center ;
+	}
+	
+#form-actions input {
+	background-color: #D0D0D0 ;
+	border: 1px solid #666666 ;
+	font-size: 20px ;
+	margin: 0px 30px 0px 30px ;
+	}
+	
